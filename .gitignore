@@ -1,0 +1,18 @@
+# Ignore Dataset (Too large)
+SoundsDatabase/
+Data_S1.xlsx
+
+# Ignore Cache
+*.pkl
+__pycache__/
+*.pyc
+
+# Ignore Build Artifacts
+build/
+dist/
+*.spec
+
+# Ignore Virtual Env
+.venv/
+.idea/
+.vscode/

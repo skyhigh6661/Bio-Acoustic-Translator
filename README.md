@@ -68,7 +68,7 @@ BioTranslator/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/Bio-Acoustic-Translator.git
+git clone https://github.com/skyhigh6661/Bio-Acoustic-Translator.git
 cd Bio-Acoustic-Translator
 ```
 ### 2. Install Dependencies
@@ -112,17 +112,18 @@ Run the application:
 python main.py
 ```
 ### Mode 1: Analysis (Left Panel)
-1.Click "Select Audio File".
-2.Choose a valid .wav file (e.g., from the dataset).
-3.The system will output the predicted Species, Behavior, and Emotion, along with F0 and Spectral Centroid metrics.
-4.View the real-time Waveform (Blue) and FFT Spectrum (Blue).
+1.  Click **"Select Audio File"**.
+2.  Choose a valid `.wav` file (e.g., from the dataset).
+3.  The system will output the predicted **Species**, **Behavior**, and **Emotion**, along with **F0** and **Spectral Centroid** metrics.
+4.  View the real-time Waveform (Blue) and FFT Spectrum (Blue).
+
 ### Mode 2: Synthesis (Right Panel)
-1.Select a Target Species (e.g., Cow).
-2.Select a Behavior Context (e.g., Separation).
-3.Click "Generate Audio".
-4.The system will synthesize a unique call and play it automatically.
-5.View the Synthesized Waveform (Green) and FFT Spectrum (Orange).
-6.Use "Save to Disk" to export the result.
+1.  Select a **Target Species** (e.g., Cow).
+2.  Select a **Behavior Context** (e.g., Separation).
+3.  Click **"Generate Audio"**.
+4.  The system will synthesize a unique call and play it automatically.
+5.  View the Synthesized Waveform (Green) and FFT Spectrum (Orange).
+6.  Use **"Save to Disk"** to export the result.
 
 ---
 
@@ -131,7 +132,7 @@ python main.py
 To compile the project into a standalone Windows `.exe` folder (using PyInstaller):
 
 ```bash
-python -m PyInstaller --noconsole --onedir --name="BioTranslator" --collect-all="librosa" --collect-all="sklearn" --hidden-import="librosa.display" main.py
+python PyInstaller -F main.py
 ```
 **Note:** After building, navigate to dist/BioTranslator/ and manually copy the SoundsDatabase folder into it. The executable requires the audio files to function.
 
@@ -156,7 +157,8 @@ python -m PyInstaller --noconsole --onedir --name="BioTranslator" --collect-all=
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.  
+For more details, please visit [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
 
 **Acknowledgments**:
 *   Dataset provided by [Zenodo](https://zenodo.org/records/14636641).
